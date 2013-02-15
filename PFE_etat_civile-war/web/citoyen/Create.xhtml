@@ -45,7 +45,7 @@
         </h:panelGroup>
     </f:facet>
 </b:input>-->       
-                                <rich:autocomplete mode="cachedAjax" autocompleteList="#{villeController.list}" var="item" layout="div" >
+                                <rich:autocomplete mode="client" autocompleteList="#{villeController.list}" var="item" layout="div" >
                                                 <h:inputHidden id="ville" value="#{citoyenController.selected.ville}"/>
                                                 <b>#{item.libelleFr}</b>
                                             </rich:autocomplete>
