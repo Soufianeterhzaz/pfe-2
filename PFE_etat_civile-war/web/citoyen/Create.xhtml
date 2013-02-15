@@ -44,14 +44,11 @@
             <b:commandButton value="+"/>
         </h:panelGroup>
     </f:facet>
-</b:input>-->
-                                <rich:autocomplete id="ville" mode="client" autocompleteList="#{villeController.list}" var="item" fetchValue="#{item}" layout="div">
-                                                <b>#{item.id}</b>
+</b:input>-->       
+                                <rich:autocomplete mode="cachedAjax" autocompleteList="#{villeController.list}" var="item" layout="div" >
+                                                <h:inputHidden id="ville" value="#{citoyenController.selected.ville}"/>
+                                                <b>#{item.libelleFr}</b>
                                             </rich:autocomplete>
-
-<!--                                <rich:autocomplete id="ville" value="#{citoyenController.selected.ville}" mode="client" minChars="0" autofill="false" autocompleteList="#{villeController.list}" var="ville"/>-->
-
-
 
 <!--                               <h:selectOneMenu id="ville" value="#{citoyenController.selected.ville}" title="#{bundle.CreateCitoyenTitle_ville}" >
        <f:selectItems value="#{villeController.itemsAvailableSelectOne}"/>
