@@ -5,7 +5,6 @@
 package bean;
 
 import java.io.Serializable;
-import java.nio.charset.Charset;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -89,7 +88,7 @@ public class Ville implements Serializable {
 
     @Override
     public String toString() {
-        return libelleFr+"   "+libelleAr;
+        return "bean.Ville[ id=" + id + " ]";
     }
     
 }
