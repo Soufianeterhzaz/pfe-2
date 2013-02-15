@@ -1,21 +1,62 @@
 <?xml version='1.0' encoding='UTF-8' ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:rich="http://richfaces.org/rich"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:b="http://richfaces.org/sandbox/bootstrap"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title><ui:insert name="title">Default Title</ui:insert></title>
-<h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
-
-    <h:body>
-        <h1>
-            <ui:insert name="title">Default Title</ui:insert>
-        </h1>
-        <p>
-            <ui:insert name="body">Default Body</ui:insert>
-        </p>
+    
+    <h:body styleClass="span10 offset1">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand pull-right" href="./index.html">Bootstrap</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="./getting-started.html">Get started</a>
+                            </li>
+                            <li class="">
+                                <a href="./scaffolding.html">Scaffolding</a>
+                            </li>
+                            <li class="">
+                                <a href="./base-css.html">Base CSS</a>
+                            </li>
+                            <li class="">
+                                <a href="./components.html">Components</a>
+                            </li>
+                            <li class="">
+                                <a href="./javascript.html">JavaScript</a>
+                            </li>
+                            <li class="">
+                                <a href="./customize.html">Customize</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <b:heroUnit>
+            <h1>
+                <ui:insert name="title">Default Title</ui:insert>
+            </h1>
+            <p>
+                <ui:insert name="body" >Default Body</ui:insert>
+            </p>
+        </b:heroUnit>
     </h:body>
 
 </html>

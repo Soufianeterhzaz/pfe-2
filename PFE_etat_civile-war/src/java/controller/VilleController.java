@@ -4,6 +4,7 @@ import bean.Ville;
 import controller.util.JsfUtil;
 import controller.util.PaginationHelper;
 import java.io.Serializable;
+import java.util.List;
 import java.util.ResourceBundle;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
@@ -182,7 +183,11 @@ public class VilleController implements Serializable {
     public SelectItem[] getItemsAvailableSelectMany() {
         return JsfUtil.getSelectItems(ejbFacade.findAll(), false);
     }
-
+    
+    public List getList() {
+        return ejbFacade.findAll();
+    }
+    
     public SelectItem[] getItemsAvailableSelectOne() {
         return JsfUtil.getSelectItems(ejbFacade.findAll(), true);
     }
